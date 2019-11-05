@@ -30,11 +30,11 @@ def cvtBackground(path, color):
     for key in image:
         cv2.namedWindow(key)
         cv2.imshow(key, image[key])
-        cv2.imwrite("E:/Xinxin/191105photo/personPhoto1.jpg", img)
+        cv2.imwrite("your path", img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
     return img
 # test
 if __name__ == '__main__':
-    img = cvtBackground('E:/Xinxin/191105photo/personPhoto.jpg', [255, 255, 255])
+    img = cvtBackground('your path', [255, 255, 255])
